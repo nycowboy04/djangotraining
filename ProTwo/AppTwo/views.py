@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from .models import User
 # Create your views here.
 def index(request):
-    return HttpResponse("<em>My Second App</em>")
+    return HttpResponse(request, 'apptwo/index.html')
 
 def help(request):
     myDict = {'help_text':"This is the help page."}
